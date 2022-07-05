@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ==== NAV ==== */
+
+nav {
+    width: 100%;
+    height: 85px;
+    background-color: #18929D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 0 6% 0 4%;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav .menu {
+    cursor: pointer;
+    display: none;
+}
+
+/* ==== MAIN ==== */
+
+main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.281), rgba(0,0,0,0.308)), url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .content {
+    width: 100%;
+    padding: 10px;
+}
+
+main .content-texto {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main .content-texto h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+main .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .buttons button {
+    width: 180px;
+    height: 60px;
+    margin: 0 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+main .buttons button:first-child {
+    border: 3px solid #fff;
+}
+
+main .buttons button:first-child:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.3s ease-in;
+}
+
+main .buttons button:last-child {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #fff;
+    animation: batida 0.5s ease-in-out infinite both;
+}

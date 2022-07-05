@@ -1,0 +1,58 @@
+
+@media (max-width: 850px) {
+
+    nav .menu {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: 0.4s ease;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #57a9b1;
+        z-index: 1000;
+    }
+
+    nav ul.active { /* classe adicionada via javascript */
+
+        transform: translateX(0);
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        color: black;
+    }
+}
+
+@media (max-width: 450px) {
+
+    main .content .content-texto h1 {
+        font-size: 3rem;
+    }
+
+    main .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    main .content .content-texto h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 250px) {
+
+    main .content .content-texto h1 {
+        font-size: 2.2rem;
+    }
+}
