@@ -83,12 +83,12 @@ main .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 35px;
 }
 
 main .buttons button {
     width: 180px;
     height: 60px;
-    margin: 0 15px;
     border: none;
     border-radius: 5px;
     outline: none;
